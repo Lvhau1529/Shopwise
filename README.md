@@ -1,4 +1,5 @@
-# Logistic-Shop
+# Shopwise
+https://lvhau1529.github.io/Shopwise/
 
 # Code Style
 ## PUG
