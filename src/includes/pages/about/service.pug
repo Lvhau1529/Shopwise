@@ -1,0 +1,11 @@
+mixin content(title,lorem)
+    li.service__content-icon
+        i.fa(class!=attributes.class)
+        .icon__title= title
+        .icon__lorem= lorem
+.service    
+    .container
+        ul.service__content
+            +content('Free Delivery','If you are going to use of Lorem, you need to be sure there anything')(class='fa-truck')
+            +content('30 Day return','If you are going to use of Lorem, you need to be sure there anything')(class='fa-repeat')
+            +content('24/7 Support','If you are going to use of Lorem, you need to be sure there anything')(class='fa-headphones')

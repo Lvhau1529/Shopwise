@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Shopwise
+    //- Logo Icon
+    link(rel="shortcut icon" type="image/x-icon" href="")
+
+    //- Font Awesome icons (free version)
+    script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js' crossorigin='anonymous')
+
+    //- Linearicons icons (free version)
+    link(rel="stylesheet" href="assets/fonts/linearicons/style.css")
+
+    //- Flaticons icons (free version)
+    link(rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon.css")
+
+    //- Themify icons (free version)
+    link(href="assets/fonts/themify-icons/themify-icons.css" rel="stylesheet")
+
+    //- Google fonts
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet")
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css')
+
+    //- Bootstrap CSS
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css")
+
+    //- OwlCarousel CSS
+    link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css")
+
+    //- Style CSS
+    link(rel="stylesheet" type="text/css" href="./assets/css/main.css")
+  body
+    .wrapper
+      include ../components/button.pug
+      include ../components/heading.pug
+      include ./header.pug
+      block content
+      include ./footer.pug
+    //- jQuery
+    script(src="./assets/js/jquery.min.js")
+    //- Owl Carousel
+    script(src="./assets/js/owl.carousel.min.js")
+    //- Bootstrap JS
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js")
+    //- Java Script
+    script(src="./assets/js/main.js")
+    //- Ion
+    script(src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js")

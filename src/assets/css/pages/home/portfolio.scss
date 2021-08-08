@@ -1,0 +1,23 @@
+.portfolio{
+    &__item{
+        position: relative;
+        &:hover .portfolio__item-overlay{
+            visibility: visible;
+            opacity: 1;
+        }
+        &-images{
+            width: 100%;
+        }
+        &-overlay{
+            @include position(absolute,100%,100%,red,"");
+            @include breakpoint(767) { background-color: blue; }
+            opacity: 0;
+            top: 0;
+            visibility: hidden;
+            transition: .5s;
+        }
+        .overlay__text{
+           font-size: 60px;
+        }
+    }
+}

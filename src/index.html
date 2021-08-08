@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopwise</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon/flaticon.css">
+    <link href="assets/fonts/themify-icons/themify-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__top">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-center justify-content-md-start">
+                <div class="header__top-left">
+                  <ul class="left__list d-flex">
+                    <li class="left__list-item"><img class="img-fluid" src="./assets/images/eng.png" alt=""><a class="item__link" href="#">English</a><i class="lnr lnr-chevron-down"></i></li>
+                    <li class="left__list-item"><a class="item__link" href="#">USD</a><i class="lnr lnr-chevron-down"></i></li>
+                    <li class="left__list-item"><i class="lnr lnr-smartphone"></i><a class="item__link" href="#">123-456-7890</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 cod-sm-12 d-flex align-items-center justify-content-center justify-content-md-end">
+                <div class="header__top-right d-flex">
+                  <ul class="right__list d-flex">
+                    <li class="right__list-item"><i class="ti-control-shuffle"></i><a class="item__link" href="#">Compare               </a></li>
+                    <li class="right__list-item"><i class="lnr lnr-heart"></i><a class="item__link" href="#">Wishlist</a></li>
+                    <li class="right__list-item"><i class="lnr lnr-user"></i><a class="item__link" href="#">Login</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="container">
+            <div class="row">
+              <nav class="header__main-nav d-flex justify-content-between align-items-center">
+                <div class="nav__logo"><img src="assets/images/logo_dark.png"></div>
+                <div class="nav__mobile-cart">
+                  <li class="nav__list-item item--cart--mobile"><a class="item__link" href="#"><i class="lnr lnr-magnifier item__icon"></i></a></li>
+                  <li class="nav__list-item item--cart--mobile"><a class="item__link" href="#"><i class="lnr lnr-cart item__icon"></i>
+                      <div class="cart__number">2</div>
+                      <div class="cart__product">
+                        <div class="product__content d-flex">
+                          <div class="product__content-img"><img src="assets/images/cart_thamb1.jpg" alt=""></div>
+                          <div class="product__content-detail">
+                            <div class="detail__name"> <a href="">Variable Product 001</a></div>
+                            <div class="detail__prize">1 x 78.00$</div>
+                          </div>
+                        </div>
+                        <div class="product__content d-flex">
+                          <div class="product__content-img"><img src="assets/images/cart_thamb2.jpg" alt=""></div>
+                          <div class="product__content-detail">
+                            <div class="detail__name"><a href="">Variable Product 001</a></div>
+                            <div class="detail__prize">1 x 78.00$</div>
+                          </div>
+                        </div>
+                        <div class="product__total d-flex justify-content-between">
+                          <div class="total__title">Subtotal:</div>
+                          <div class="total__prize">$159.00</div>
+                        </div>
+                        <div class="product__button"></div>
+                      </div></a></li>
+                  <li class="nav__button"><a class="item__link" href="#"><i class="fas fa-bars"></i></a><a class="item__link" href="#"><i class="fas fa-times"></i></a></li>
+                </div>
+                <ul class="nav__mobile" id="mobile">
+                  <li class="nav__mobile-item"><a class="item__link" href="#">HOME<i class="lnr lnr-chevron-down item__icon"></i></a>
+                    <ul class="item__dropdown">
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 1</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 2</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Furniture 1</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Furniture 2</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Electronis 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__mobile-item"><a class="item__link" href="#">PAGES<i class="lnr lnr-chevron-down item__icon"></i></a>
+                    <ul class="item__dropdown">
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 1</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 2</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Furniture 1</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Furniture 2</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Electronis 1</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__mobile-item"><a class="item__link" href="#">PRODUCTS<i class="lnr lnr-chevron-down item__icon"></i></a></li>
+                  <li class="nav__mobile-item"><a class="item__link" href="#">BLOG<i class="lnr lnr-chevron-down item__icon"></i></a></li>
+                  <li class="nav__mobile-item"><a class="item__link" href="#">SHOP<i class="lnr lnr-chevron-down item__icon"></i></a></li>
+                  <li class="nav__mobile-item"><a class="item__link" href="#">CONTACT US<i class="lnr lnr-chevron-down item__icon"></i></a></li>
+                </ul>
+                <ul class="nav__list d-lg-flex">
+                  <li class="nav__list-item"><a class="item__link" href="#">Home</a><i class="lnr lnr-chevron-down item__icon"></i>
+                    <ul class="item__dropdown">
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 1</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 2</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 3</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 4</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 5</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__list-item"><a class="item__link" href="#">Pages</a><i class="lnr lnr-chevron-down item__icon"></i>
+                    <ul class="item__dropdown">
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 1</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 2</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 3</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 4</a></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Fashion 5</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__list-item p-static"><a class="item__link" href="#">Products</a><i class="lnr lnr-chevron-down item__icon"></i>
+                    <ul class="item__mega">
+                      <div class="item__mega-item">
+                        <h3 class="item__title">WOMAN'S</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                        </ul>
+                      </div>
+                      <div class="item__mega-item">
+                        <h3 class="item__title">MEN'S</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                        </ul>
+                      </div>
+                      <div class="item__mega-item">
+                        <h3 class="item__title">KID'S</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                        </ul>
+                      </div>
+                      <div class="item__mega-item">
+                        <h3 class="item__title">ACCESSORIES</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                        </ul>
+                      </div>
+                      <div class="img__mega d-flex"><img src="assets/images/menu_banner1.jpg"><img src="assets/images/menu_banner2.jpg"><img src="assets/images/menu_banner3.jpg"></div>
+                    </ul>
+                  </li>
+                  <li class="nav__list-item left-dropdown"><a class="item__link" href="#">Blog</a><i class="lnr lnr-chevron-down item__icon">   </i>
+                    <ul class="item__dropdown">
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Grids</a><i class="lnr lnr-chevron-right item__icon"></i>
+                        <ul class="dropdown-left">
+                          <li class="dropdown-left__list"><a class="list__link" href="#">3 Columns</a></li>
+                          <li class="dropdown-left__list"><a class="list__link" href="#">3 Columns</a></li>
+                          <li class="dropdown-left__list"><a class="list__link" href="#">3 Columns</a></li>
+                          <li class="dropdown-left__list"><a class="list__link" href="#">3 Columns</a></li>
+                          <li class="dropdown-left__list"><a class="list__link" href="#">3 Columns</a></li>
+                        </ul>
+                      </li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Masonry</a><i class="lnr lnr-chevron-right item__icon"></i></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">Single Post</a><i class="lnr lnr-chevron-right item__icon"></i></li>
+                      <li class="item__dropdown-item"><a class="dropdown-item__link" href="#">List</a><i class="lnr lnr-chevron-right item__icon"></i></li>
+                    </ul>
+                  </li>
+                  <li class="nav__list-item p-static"><a class="item__link" href="#">Shop</a><i class="lnr lnr-chevron-down item__icon"></i>
+                    <ul class="item__mega">
+                      <div class="item__mega-item">
+                        <h3 class="item__title">SHOP PAGE LAYOUT</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Shop List View</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Shop List Left Sidebar</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Shop List Right Sidebar</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Left Sidebar</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Right Sidebar</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Load Shop More</a></li>
+                        </ul>
+                      </div>
+                      <div class="item__mega-item">
+                        <h3 class="item__title">OTHER PAGES</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                        </ul>
+                      </div>
+                      <div class="item__mega-item">
+                        <h3 class="item__title">PRODUCT PAGES</h3>
+                        <ul class="item__subList">
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                          <li class="subList__item"><a class="sublist__item-link" href="#">Vestibulum sed</a></li>
+                        </ul>
+                      </div>
+                      <div class="item__mega-item text-center"><img class="img-fluid" src="assets/images/shop_banner.jpg" alt=""></div>
+                    </ul>
+                  </li>
+                  <li class="nav__list-item"><a class="item__link" href="#">Contact us</a></li>
+                  <li class="nav__list-item item--cart">
+                    <div class="search__close"><a class="item__link" href="#"><i class="lnr lnr-magnifier item__icon"></i></a></div>
+                    <div class="search__overlay"></div>
+                    <div class="search__wrap"><i class="lnr lnr-cross item__icon"></i>
+                      <form>
+                        <input text="search" placeholder="Search">
+                        <button><i class="lnr lnr-magnifier item__icon"></i></button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="nav__list-item item--cart"><a class="item__link" href="#"><i class="lnr lnr-cart item__icon"></i>
+                      <div class="cart__number">2</div>
+                      <div class="cart__product">
+                        <div class="product__content d-flex">
+                          <div class="product__content-img"><img src="assets/images/cart_thamb1.jpg" alt=""></div>
+                          <div class="product__content-detail">
+                            <div class="detail__name"> <a href="">Variable Product 001</a></div>
+                            <div class="detail__prize">1 x 78.00$</div>
+                          </div>
+                        </div>
+                        <div class="product__content d-flex">
+                          <div class="product__content-img"><img src="assets/images/cart_thamb2.jpg" alt=""></div>
+                          <div class="product__content-detail">
+                            <div class="detail__name"><a href="">Variable Product 001</a></div>
+                            <div class="detail__prize">1 x 78.00$</div>
+                          </div>
+                        </div>
+                        <div class="product__total d-flex justify-content-between">
+                          <div class="total__title">Subtotal:</div>
+                          <div class="total__prize">$159.00</div>
+                        </div>
+                        <div class="product__button"></div>
+                      </div></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumb">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="breadcrumb__title">About Us</div>
+            </div>
+            <div class="col-md-6">
+              <ul class="breadcrumb__list d-flex justify-content-md-end">
+                <li class="breadcrumb__list-item"><a class="item__link">Home</a><i class="ti-angle-right"></i></li>
+                <li class="breadcrumb__list-item"><a class="item__link">Pages</a><i class="ti-angle-right"></i></li>
+                <li class="breadcrumb__list-item"><a class="item__link">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+              <div class="about__img"><img class="about__img img-fluid" src="assets/images/about_img.jpg"></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="about__text">
+                <div class="about__text-title">Who We Are</div>
+                <div class="about__text-decs">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consequuntur quibusdam enim expedita sed nesciunt incidunt accusamus adipisci officia libero laboriosam!</p>
+                  <p>Proin gravida nibh vel velit auctor aliquet. nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vultate cursus a sit amet mauris. Duis sed odio sit amet nibh vultate cursus a sit amet mauris.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reason">
+              <div class="heading">
+                <div class="container">
+                  <div class="d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                      <div class="heading__text text-center">
+                        <div class="heading__text-title text-lg-size">Why Choose Us?</div>
+                        <div class="heading__text-desc text-md-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-sm-6">
+              <div class="reason__content">
+                <div class="reason__content-icon">
+                  <div class="icon"><i class="ti-pencil-alt"></i></div>
+                </div>
+                <div class="reason__content-title">Creative Design </div>
+                <div class="reason__content-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="reason__content">
+                <div class="reason__content-icon">
+                  <div class="icon"><i class="ti-layers"></i></div>
+                </div>
+                <div class="reason__content-title">Creative Design </div>
+                <div class="reason__content-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="reason__content">
+                <div class="reason__content-icon">
+                  <div class="icon"><i class="ti-email"></i></div>
+                </div>
+                <div class="reason__content-title">Creative Design </div>
+                <div class="reason__content-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+              <div class="heading">
+                <div class="container">
+                  <div class="d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                      <div class="heading__text text-center">
+                        <div class="heading__text-title text-lg-size">Our Team Members</div>
+                        <div class="heading__text-desc text-md-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <div class="team__content">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-sm-6">
+                <div class="team__content-card">
+                  <div class="card__img"><img src="assets/images/team_img1.jpg" alt="">
+                    <div class="card__img-overlay">
+                      <ul class="overlay__list d-flex justify-content-center">
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__title"> 
+                    <h5>John Muniz</h5>
+                  </div>
+                  <div class="card__text"> 
+                    <p>Project Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="team__content-card">
+                  <div class="card__img"><img src="assets/images/team_img2.jpg" alt="">
+                    <div class="card__img-overlay">
+                      <ul class="overlay__list d-flex justify-content-center">
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__title"> 
+                    <h5>John Muniz</h5>
+                  </div>
+                  <div class="card__text"> 
+                    <p>Project Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="team__content-card">
+                  <div class="card__img"><img src="assets/images/team_img3.jpg" alt="">
+                    <div class="card__img-overlay">
+                      <ul class="overlay__list d-flex justify-content-center">
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__title"> 
+                    <h5>John Muniz</h5>
+                  </div>
+                  <div class="card__text"> 
+                    <p>Project Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="team__content-card">
+                  <div class="card__img"><img src="assets/images/team_img4.jpg" alt="">
+                    <div class="card__img-overlay">
+                      <ul class="overlay__list d-flex justify-content-center">
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                        <li class="overlay__list-item"><a class="item__link" href="#"><i class="ti-facebook"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card__title"> 
+                    <h5>John Muniz</h5>
+                  </div>
+                  <div class="card__text"> 
+                    <p>Project Engineer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="container">
+          <div class="d-md-flex justify-content-center">
+            <div class="col-md-8">
+              <div class="testimonial__text">
+                <div class="testimonial__text-title text-lg-size text-center">Our Client Say!</div>
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <div class="testimonial__text-desc text-md-size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</div>
+                    <div class="testimonial__text-client d-flex justify-content-center align-items-center">
+                      <div class="client__img"><img src="assets/images/user_img1.jpg"></div>
+                      <div class="client__text">
+                        <div class="client__text-name">Lissa Castro</div>
+                        <div class="client__text-job">Designer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial__text-desc text-md-size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</div>
+                    <div class="testimonial__text-client d-flex justify-content-center align-items-center">
+                      <div class="client__img"><img src="assets/images/user_img2.jpg"></div>
+                      <div class="client__text">
+                        <div class="client__text-name">Lissa Castro</div>
+                        <div class="client__text-job">Designer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial__text-desc text-md-size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</div>
+                    <div class="testimonial__text-client d-flex justify-content-center align-items-center">
+                      <div class="client__img"><img src="assets/images/user_img3.jpg"></div>
+                      <div class="client__text">
+                        <div class="client__text-name">Lissa Castro</div>
+                        <div class="client__text-job">Designer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="testimonial__text-desc text-md-size">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam amet animi blanditiis consequatur debitis dicta distinctio, enim error eum iste libero modi nam natus perferendis possimus quasi sint sit tempora voluptatem.</div>
+                    <div class="testimonial__text-client d-flex justify-content-center align-items-center">
+                      <div class="client__img"><img src="assets/images/user_img4.jpg"></div>
+                      <div class="client__text">
+                        <div class="client__text-name">Lissa Castro</div>
+                        <div class="client__text-job">Designer</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="policy">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="policy__content text-center">
+                <div class="policy__content-icon"><i class="flaticon-shipped"></i></div>
+                <div class="policy__content-title">Free Delivery</div>
+                <div class="policy__content-text">If you are going to use of Lorem, you need to be sure there anything</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="policy__content text-center">
+                <div class="policy__content-icon"><i class="flaticon-shipped"></i></div>
+                <div class="policy__content-title">Free Delivery</div>
+                <div class="policy__content-text">If you are going to use of Lorem, you need to be sure there anything</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="policy__content text-center">
+                <div class="policy__content-icon"><i class="flaticon-shipped"></i></div>
+                <div class="policy__content-title">Free Delivery</div>
+                <div class="policy__content-text">If you are going to use of Lorem, you need to be sure there anything</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="subscribe">
+        <div class="container">
+          <div class="subscribe__content">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="subscribe__content-title">Subscribe Our Newsletter</div>
+              </div>
+              <div class="col-md-6">
+                <div class="subscribe__content-email">
+                  <form class="d-flex" action="">
+                    <input type="text" placeholder="Enter Email Address">
+                    <button class="btn btn-dark rounded-0" type="submit">Subscribe </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer__content-logo"><img class="logo" src="assets/images/logo_light.png">
+                  <div class="logo__text">
+                    <p>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
+                  </div>
+                  <ul class="logo__list">
+                    <li class="logo__list-item"><a class="item__link" href=""><i class="ti-facebook"></i></a></li>
+                    <li class="logo__list-item"><a class="item__link" href=""><i class="ti-facebook"></i></a></li>
+                    <li class="logo__list-item"><a class="item__link" href=""><i class="ti-facebook"></i></a></li>
+                    <li class="logo__list-item"><a class="item__link" href=""><i class="ti-facebook"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer__content-nav">
+                  <div class="nav__title">
+                    <h6>Useful Links</h6>
+                  </div>
+                  <ul class="nav__list">
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer__content-nav">
+                  <div class="nav__title">
+                    <h6>Useful Links</h6>
+                  </div>
+                  <ul class="nav__list">
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <lli class="nav__list-item"><a class="item__link" href="">About Us</a></lli>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2">
+                <div class="footer__content-nav">
+                  <div class="nav__title">
+                    <h6>Useful Links</h6>
+                  </div>
+                  <ul class="nav__list">
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                    <li class="nav__list-item"><a class="item__link" href="">About Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="footer__content-contact">
+                  <div class="contact__title"> 
+                    <h6>Contact Info</h6>
+                  </div>
+                  <div class="contact__info"><i class="ti-location-arrow"></i>
+                    <p>123 Street, Old Trafford, New South London , UK</p>
+                  </div>
+                  <div class="contact__info"><i class="ti-email"></i>
+                    <p>info@sitename.com</p>
+                  </div>
+                  <div class="contact__info"><i class="ti-location-arrow"></i>
+                    <p>+ 457 789 789 65</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="footer__bottom-lisence d-flex justify-content-lg-start justify-content-center">
+                  <p>© 2020 All Rights Reserved by Bestwebcreator</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="footer__bottom-payment d-flex justify-content-lg-end justify-content-center">
+                  <ul class="payment__list d-flex">
+                    <li class="payment__list-item"><a class="item__link" href="#"><img src="assets/images/visa.png"></a></li>
+                    <li class="payment__list-item"><a class="item__link" href="#"><img src="assets/images/discover.png"></a></li>
+                    <li class="payment__list-item"><a class="item__link" href="#"><img src="assets/images/master_card.png"></a></li>
+                    <li class="payment__list-item"><a class="item__link" href="#"><img src="assets/images/paypal.png"></a></li>
+                    <li class="payment__list-item"><a class="item__link" href="#"><img src="assets/images/amarican_express.png"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer><a class="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  </body>
+</html>

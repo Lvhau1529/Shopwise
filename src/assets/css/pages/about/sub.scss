@@ -1,0 +1,35 @@
+/*=====================Sub=====================*/
+.sub {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ff324d;
+  padding: 50px 0;
+  &__body {
+    &-text {
+      h3{
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+    &-input {
+      input{
+        padding: 8px 15px;
+        border-radius: 0;
+        height: 50px;
+      }
+      button {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100%;
+        font-size: 16px;
+        color: #fff;
+        background-color: #343a40;
+        border: 1px solid #343a40;
+      }
+    }
+  }
+}
+  /*=====================End=====================*/
+  

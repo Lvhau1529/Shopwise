@@ -1,0 +1,16 @@
+.about {
+  padding: 10rem  0;
+  &__text {
+    &-title {
+      @include fontRoboto;
+      margin-bottom: 2.5rem;
+    }
+    &-decs {
+      @include fontPoppins(1.6rem);
+      p {
+        margin-bottom: 2.5rem;
+        line-height: 2.8rem;
+      }
+    }
+  }
+}

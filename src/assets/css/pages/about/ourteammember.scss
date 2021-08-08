@@ -1,0 +1,88 @@
+.otm{
+    &__content {
+        padding: 60px;
+        &-title {
+          font-weight: 700;
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        &-lorem {
+          color: #687188;
+          margin: 0 auto;
+          width: 50%;
+          text-align: center;
+        }
+        &-member {
+          margin-top: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          .member__item {
+            width: 22%;
+            @include max-breakpoint(991) {
+              width: 45%;
+            }
+            @include max-breakpoint(576) {
+              width: 100%;
+            }
+            &-img {
+              position: relative;
+              background-size: cover;
+              img{width: 100%;}
+              .img__black {
+                position: absolute;
+                background-color: #68718866;
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 100%;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.8s;
+              }
+              .img__icon {
+                display: flex;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 0;
+                transition: 0.4s;
+                opacity: 0;
+                visibility: hidden;
+                &-item {
+                  padding: 10px;
+                  background-color: #fff;
+                  color: #ff324d;
+                  margin-right: 5px;
+                  &:hover {
+                    color: #fff;
+                    background-color: #ff324d;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+            &-name {
+              font-size: 1.25rem;
+              color: #292b2c;
+              font-weight: 500;
+            }
+            &-position {
+              color: #687188;
+            }
+            &:hover {
+              .img__black {
+                opacity: 1;
+                visibility: visible;
+              }
+              .img__icon {
+                opacity: 1;
+                visibility: visible;
+                top: 40%;
+              }
+            }
+          }
+        }
+      }
+}

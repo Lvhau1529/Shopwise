@@ -1,0 +1,14 @@
+@mixin fontFamily($font) {
+	font-family: $font;
+}
+@mixin fontRoboto($size: 3.2rem, $fontWeight: 700) {
+	font-family: "Roboto", sans-serif;
+	font-size: $size;
+	color: $text-title;
+	font-weight: $fontWeight;
+}
+@mixin fontPoppins($size: 1.8rem, $color: $text-normal) {
+	font-family: "Poppins", sans-serif;
+	font-size: $size;
+	color: $color;
+}

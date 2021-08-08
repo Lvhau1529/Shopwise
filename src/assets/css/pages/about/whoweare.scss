@@ -1,0 +1,35 @@
+.wwa{
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+        &-left {
+        background-size: cover;
+        width: 50%;
+        width: 50%;
+        @include max-breakpoint(1024) {
+            width: 80%;
+        }
+        @include max-breakpoint(768) {
+            width: 100%;
+        }
+        }
+        &-right {
+        width: 50%;
+        padding-left: 20px;
+        padding-top: 30px;
+        @include max-breakpoint(1024) {
+            width: 100%;
+            padding-left: 0px;
+        }
+        .right__title {
+            font-weight: 700;
+            text-transform: capitalize;
+            font-size: 30px;
+        }
+        .right__info {
+            color: #687188;
+        }
+        }
+    }
+}

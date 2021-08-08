@@ -1,0 +1,24 @@
+mixin team(src,name,position)
+    li.member__item
+        .member__item-img 
+            img(src=src, alt="")
+            .img__black
+            ul.img__icon    
+                li.img__icon-item.fa.fa-facebook
+                li.img__icon-item.fa.fa-twitter
+                li.img__icon-item.fa.fa-google-plus
+                li.img__icon-item.fa.fa-instagram
+        .member__item-name= name
+        .member__item-position= position
+
+
+.otm    
+    .container 
+        .otm__content
+            .otm__content-title Our Team Members
+            .otm__content-lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+            ul.otm__content-member
+                +team("../assets/images/team_img1.jpg","John Muniz","Project Engineer")
+                +team("../assets/images/team_img2.jpg","Alea Brooks","Graphics Designer")
+                +team("../assets/images/team_img3.jpg","Anders Glick","Software Developer")
+                +team("../assets/images/team_img4.jpg","Richard Tice","Web Developer")

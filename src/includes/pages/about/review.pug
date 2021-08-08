@@ -1,0 +1,25 @@
+mixin profile(src,name,position)
+    li.slide__item-profile&attributes(attributes)
+        .profile__text Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem cupiditate temporibus provident, ullam, odit animi eaque commodi, non rerum alias officiis et reprehenderit? Illo qui eligendi temporibus corporis sequi?
+        .profile__img
+            img(src=src, alt="")
+            .profile__img-name
+                h6= name
+                span= position
+
+.review 
+    .container 
+        .review__content 
+            .review__content-ocs  Our Client Say!
+            .review__content-slide
+                ul.slide__item 
+                    +profile("../assets/images/user_img1.jpg","John Becker","Desinger")(class='active')
+                    +profile("../assets/images/user_img2.jpg","Alden Smith","Designer")
+                    +profile("../assets/images/user_img3.jpg","Lissa Castro","Desinger")
+                    +profile("../assets/images/user_img4.jpg","Daisy Lana","Desinger")
+                .slide__button 
+                    span.slide__button-left
+                        i.fa.fa-chevron-left
+                    span.slide__button-right
+                        i.fa.fa-chevron-right
+                

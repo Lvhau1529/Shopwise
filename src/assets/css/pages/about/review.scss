@@ -1,0 +1,119 @@
+.review{
+    background-color: #fff1f1;
+    &__content {
+        padding: 50px 0;
+        &-ocs {
+          font-weight: 700;
+          font-size: 2rem;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        &-slide {
+          width: 70%;
+          position: relative;
+          height: 200px;
+          overflow: hidden;
+          margin: 0 auto;
+          @include max-breakpoint(768) {
+            width: 80%;
+          }
+          .slide__item {
+            .visible {
+              animation: moveleft1 0.2s forwards;
+              @keyframes moveleft1 {
+                from {
+                  opacity: 0;
+                  transform: translateX(100%);
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+            }
+            .hidden {
+              animation: moveleft2 0.2s forwards;
+              @keyframes moveleft2 {
+                from {
+                  opacity: 1;
+                }
+                to {
+                  opacity: 0;
+                  transform: translateX(-100%);
+                }
+              }
+            }
+            .visible1 {
+              animation: moveright1 0.2s forwards;
+              @keyframes moveright1 {
+                from {
+                  opacity: 0;
+                  transform: translateX(-100%);
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+            }
+            .hidden1 {
+              animation: moveright2 0.2s forwards;
+              @keyframes moveright2 {
+                from {
+                  opacity: 1;
+                }
+                to {
+                  opacity: 0;
+                  transform: translateX(100%);
+                }
+              }
+            }
+            .active {
+              visibility: visible;
+              opacity: 1;
+            }
+            &-profile {
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 80%;
+              transition: 0.4s;
+              visibility: hidden;
+              opacity: 0;
+              .profile__text {
+                color: #687188;
+                margin: 0 auto;
+                width: 100%;
+                text-align: center;
+              }
+              .profile__img {
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                margin-top: 28px;
+                @include max-breakpoint(1024) {
+                  margin-top: 15px;
+                }
+                &-name {
+                  margin-left: 10px;
+                  span {
+                    color: #ff324d;
+                  }
+                }
+                img {
+                  width: 60px;
+                  height: 60px;
+                }
+              }
+            }
+          }
+          .slide__button {
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            bottom: 20%;
+          }
+        }
+      }
+}

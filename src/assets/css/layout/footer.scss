@@ -1,0 +1,94 @@
+.footer {
+	color: $white;
+	padding-top: 10rem;
+	background-color: #212529;
+	p {
+		@include fontPoppins(1.4rem, $white);
+		line-height: 2.4rem;
+	}
+	h6 {
+		@include fontRoboto(1.8rem, 500);
+		margin-bottom: 3.5rem;
+		color: $white;
+	}
+	ul {
+		padding-left: 0;
+	}
+	&__content {
+		&-logo {
+			.logo__text {
+				margin: 3rem 4rem 4.6rem 0;
+			}
+			.logo__list {
+				display: flex;
+				&-item {
+					margin-left: 3rem;
+					.item__link {
+						color: $white;
+						&:hover {
+							color: $text-pink;
+						}
+					}
+					i {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+		&-nav {
+			.nav__list {
+				&-item {
+					margin-bottom: 1.2rem;
+					.item__link {
+						@include fontPoppins(1.4rem, $white);
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		&-contact {
+			.contact__info {
+				display: flex;
+				i {
+					font-size: 1.6rem;
+					margin: 0.2rem 1.2rem 0 0;
+				}
+			}
+		}
+	}
+	&__bottom {
+		margin-top: 11rem;
+		padding: 3rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		&-payment {
+			.payment__list {
+				&-item {
+					margin-left: 0.5rem;
+				}
+			}
+		}
+	}
+}
+.scroll-up {
+	background-color: #171717;
+	bottom: 2rem;
+	color: $white;
+	font-size: 1.6rem;
+	font-weight: 500;
+	width: 4rem;
+	height: 4rem;
+	line-height: 4.6rem;
+	position: fixed;
+	right: 2rem;
+	text-align: center;
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+	&:hover {
+		background-color: $text-pink;
+	}
+	&.show {
+		opacity: 1;
+		visibility: visible;
+	}
+}

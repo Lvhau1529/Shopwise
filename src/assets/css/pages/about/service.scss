@@ -1,0 +1,29 @@
+.service{
+    padding: 60px 0;
+    &__content {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        &-icon {
+        width: 30%;
+        margin-top: 20px;
+        @include max-breakpoint(768) {
+            width: 100%;
+        }
+        i {
+            font-size: 46px;
+            color: #687188;
+        }
+        .icon__title {
+            font-size: 1.25rem;
+            color: #292b2c;
+            font-weight: 500;
+        }
+        .icon__lorem {
+            color: #687188;
+        }
+        }
+    }
+}

@@ -1,0 +1,319 @@
+header.header 
+   .header__top
+      .container
+         .row
+            .col-md-6.col-sm-12.d-flex.align-items-center.justify-content-center.justify-content-md-start
+               .header__top-left
+                  ul.left__list.d-flex
+                     li.left__list-item
+                        img(src="./assets/images/eng.png" alt="").img-fluid
+                        a(href="#").item__link English
+                        i.lnr.lnr-chevron-down
+                     li.left__list-item
+                        a(href="#").item__link USD
+                        i.lnr.lnr-chevron-down
+                     li.left__list-item
+                        i.lnr.lnr-smartphone
+                        a(href="#").item__link 123-456-7890
+            .col-md-6.cod-sm-12.d-flex.align-items-center.justify-content-center.justify-content-md-end
+               .header__top-right.d-flex
+                  ul.right__list.d-flex
+                     li.right__list-item
+                        i.ti-control-shuffle
+                        a(href="#").item__link Compare               
+                     li.right__list-item
+                        i.lnr.lnr-heart
+                        a(href="#").item__link Wishlist
+                     li.right__list-item
+                        i.lnr.lnr-user
+                        a(href="#").item__link Login
+   .header__main
+      .container
+         .row
+            nav.header__main-nav.d-flex.justify-content-between.align-items-center
+               .nav__logo
+                  img(src="assets/images/logo_dark.png")
+               //- Cart mobile
+               .nav__mobile-cart
+                  li.nav__list-item.item--cart--mobile
+                     a(href="#").item__link
+                        i.lnr.lnr-magnifier.item__icon
+                  li.nav__list-item.item--cart--mobile
+                     a(href="#").item__link
+                        i.lnr.lnr-cart.item__icon
+                        .cart__number 2
+                        //- Dropdown cart
+                        .cart__product
+                           .product__content.d-flex
+                              .product__content-img
+                                 img(src="assets/images/cart_thamb1.jpg" alt="")
+                              .product__content-detail
+                                 .detail__name 
+                                    a(href="") Variable Product 001
+                                 .detail__prize 1 x 78.00$
+                           .product__content.d-flex
+                              .product__content-img
+                                 img(src="assets/images/cart_thamb2.jpg" alt="")
+                              .product__content-detail
+                                 .detail__name
+                                    a(href="") Variable Product 001
+                                 .detail__prize 1 x 78.00$
+                           .product__total.d-flex.justify-content-between
+                              .total__title Subtotal:
+                              .total__prize $159.00
+                           .product__button
+                  li.nav__button
+                     a(href="#").item__link
+                        i.fas.fa-bars
+                     a(href="#").item__link
+                        i.fas.fa-times
+               //- Nav-mobile
+               ul.nav__mobile#mobile
+                  li.nav__mobile-item
+                     a(href="#" class="item__link") HOME
+                        i.lnr.lnr-chevron-down.item__icon
+                     ul.item__dropdown
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 1
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 2
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Furniture 1
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Furniture 2
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Electronis 1
+                  li.nav__mobile-item
+                     a(href="#" class="item__link") PAGES
+                        i.lnr.lnr-chevron-down.item__icon
+                     ul.item__dropdown
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 1
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 2
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Furniture 1
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Furniture 2
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Electronis 1
+                  li.nav__mobile-item
+                     a(href="#" class="item__link") PRODUCTS
+                        i.lnr.lnr-chevron-down.item__icon
+                  li.nav__mobile-item
+                     a(href="#" class="item__link") BLOG
+                        i.lnr.lnr-chevron-down.item__icon
+                  li.nav__mobile-item
+                     a(href="#" class="item__link") SHOP
+                        i.lnr.lnr-chevron-down.item__icon
+                  li.nav__mobile-item
+                     a(href="#" class="item__link") CONTACT US
+                        i.lnr.lnr-chevron-down.item__icon
+               //- Nav-desktop
+               ul.nav__list.d-lg-flex
+                  li.nav__list-item
+                     a(href="#").item__link Home
+                     i.lnr.lnr-chevron-down.item__icon
+                     ul.item__dropdown
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 1
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 2
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 3
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 4
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 5
+                  li.nav__list-item
+                     a(href="#").item__link Pages
+                     i.lnr.lnr-chevron-down.item__icon
+                     ul.item__dropdown
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 1
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 2
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 3
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 4
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Fashion 5
+                  li.nav__list-item.p-static
+                     a(href="#").item__link Products
+                     i.lnr.lnr-chevron-down.item__icon
+                     //- Mega menu
+                     ul.item__mega
+                        .item__mega-item
+                           h3.item__title WOMAN'S
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                        .item__mega-item
+                           h3.item__title MEN'S
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                        .item__mega-item
+                           h3.item__title KID'S
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                        .item__mega-item
+                           h3.item__title ACCESSORIES
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                        .img__mega.d-flex
+                           img(src="assets/images/menu_banner1.jpg")
+                           img(src="assets/images/menu_banner2.jpg")
+                           img(src="assets/images/menu_banner3.jpg")
+                  li.nav__list-item.left-dropdown
+                     a(href="#").item__link Blog
+                     i.lnr.lnr-chevron-down.item__icon    
+                     ul.item__dropdown
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Grids
+                           i.lnr.lnr-chevron-right.item__icon
+                           ul.dropdown-left
+                              li.dropdown-left__list
+                                 a(href="#").list__link 3 Columns
+                              li.dropdown-left__list
+                                 a(href="#").list__link 3 Columns
+                              li.dropdown-left__list
+                                 a(href="#").list__link 3 Columns
+                              li.dropdown-left__list
+                                 a(href="#").list__link 3 Columns
+                              li.dropdown-left__list
+                                 a(href="#").list__link 3 Columns
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Masonry
+                           i.lnr.lnr-chevron-right.item__icon
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link Single Post
+                           i.lnr.lnr-chevron-right.item__icon
+                        li.item__dropdown-item
+                           a(href="#").dropdown-item__link List
+                           i.lnr.lnr-chevron-right.item__icon
+                  li.nav__list-item.p-static
+                     a(href="#").item__link Shop
+                     i.lnr.lnr-chevron-down.item__icon
+                     //- Mega menu
+                     ul.item__mega
+                        .item__mega-item
+                           h3.item__title SHOP PAGE LAYOUT
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Shop List View
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Shop List Left Sidebar
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Shop List Right Sidebar
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Left Sidebar
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Right Sidebar
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Load Shop More
+                        .item__mega-item
+                           h3.item__title OTHER PAGES
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                        .item__mega-item
+                           h3.item__title PRODUCT PAGES
+                           ul.item__subList
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                              li.subList__item
+                                 a(href="#" class="sublist__item-link") Vestibulum sed
+                        .item__mega-item.text-center
+                           img(src="assets/images/shop_banner.jpg" alt="").img-fluid     
+                  li.nav__list-item
+                     a(href="#").item__link Contact us
+
+                  //- Cart-desktop
+                  li.nav__list-item.item--cart
+                     .search__close
+                        a(href="#").item__link
+                           i.lnr.lnr-magnifier.item__icon
+                     .search__overlay
+                     .search__wrap
+                        i.lnr.lnr-cross.item__icon
+                        form
+                           input(text="search" placeholder="Search")
+                           button
+                              i.lnr.lnr-magnifier.item__icon
+                     
+                  li.nav__list-item.item--cart
+                     a(href="#").item__link
+                        i.lnr.lnr-cart.item__icon
+                        .cart__number 2
+                        //- Dropdown cart
+                        .cart__product
+                           .product__content.d-flex
+                              .product__content-img
+                                 img(src="assets/images/cart_thamb1.jpg" alt="")
+                              .product__content-detail
+                                 .detail__name 
+                                    a(href="") Variable Product 001
+                                 .detail__prize 1 x 78.00$
+                           .product__content.d-flex
+                              .product__content-img
+                                 img(src="assets/images/cart_thamb2.jpg" alt="")
+                              .product__content-detail
+                                 .detail__name
+                                    a(href="") Variable Product 001
+                                 .detail__prize 1 x 78.00$
+                           .product__total.d-flex.justify-content-between
+                              .total__title Subtotal:
+                              .total__prize $159.00
+                           .product__button
+
+
