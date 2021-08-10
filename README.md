@@ -1,5 +1,5 @@
 # Shopwise
-https://lvhau1529.github.io/Shopwise/
+https://lvhau1529.github.io/Shopwise/dist/index.html
 
 # Code Style
 ## PUG
