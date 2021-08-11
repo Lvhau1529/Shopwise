@@ -70,12 +70,19 @@ let searchBtn = {
 		);
 		let overLay = document.querySelector(".nav__list-item .search__overlay");
 		let btnClose = document.querySelector(".search__wrap .lnr-cross");
+		let searchInput = document.querySelector('.search__wrap');
+
+		searchInput.style.visibility = 'hidden';
+
 		btn.addEventListener("click", function () {
+			overLay.classList.remove("close");
 			overLay.classList.add("show");
+			searchInput.style.visibility = 'visible';
 		});
 		btnClose.addEventListener("click", function () {
 			overLay.classList.add("close");
 			overLay.classList.remove("show");
+			searchInput.style.visibility = 'hidden';
 		});
 	},
 };
